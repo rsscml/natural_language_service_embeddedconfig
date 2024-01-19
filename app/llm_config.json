@@ -1,0 +1,28 @@
+{
+    "model_name": "GPT-35",
+    "embedding_service": {
+        "embedding_model_service": "azure",
+        "azure_deployment":"InquiryAIEmbeddingModel",
+        "authentication_configuration": {
+            "OPENAI_API_TYPE": "azure",
+            "OPENAI_API_VERSION": "2022-12-01",
+            "AZURE_OPENAI_ENDPOINT": "https://inquiryllm-poc24.openai.azure.com/",
+            "AZURE_OPENAI_API_KEY": "1151b8b0d531466aac1c0fd8be48bc6a"
+        }
+    },
+    "completion_service": {
+        "llm_service": "azure",
+        "azure_deployment": "InquiryAIGPT35Turbo",
+        "openai_api_version": "2023-07-01-preview",
+        "llm_model": "gpt-35-turbo",
+        "authentication_configuration": {
+            "OPENAI_API_TYPE": "azure",
+            "AZURE_OPENAI_ENDPOINT": "https://inquiryllm-poc24.openai.azure.com/",
+            "AZURE_OPENAI_API_KEY": "1151b8b0d531466aac1c0fd8be48bc6a"
+        },
+        "model_kwargs": {
+            "temperature": 0
+        },
+        "prompt_path": "./app/prompts/azure_open_ai_gpt35_turbo_instruct/"
+    }
+}

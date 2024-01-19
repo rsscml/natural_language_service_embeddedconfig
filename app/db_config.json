@@ -1,0 +1,7 @@
+{
+    "hostname": "https://10.237.56.25",
+    "getToken": true,
+    "default_timeout": 300,
+    "default_mem_threshold": 5000,
+    "default_thread_limit": 8
+}

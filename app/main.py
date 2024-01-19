@@ -18,8 +18,8 @@ from app.tools import MapQuestionToSchemaException
 from app.schemas.schemas import NaturalLanguageQuery, NaturalLanguageQueryResponse, GSQLQueryInfo
 from app.log import req_id_cv
 
-LLM_SERVICE = "./llm_config.json" #os.getenv("LLM_CONFIG")
-DB_CONFIG = "./db_config.json" #os.getenv("DB_CONFIG")
+LLM_SERVICE = "/llm_config.json" #os.getenv("LLM_CONFIG")
+DB_CONFIG = "/db_config.json" #os.getenv("DB_CONFIG")
 
 with open(LLM_SERVICE, "r") as f:
     llm_config = json.load(f)

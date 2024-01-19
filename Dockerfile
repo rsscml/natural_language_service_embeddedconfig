@@ -20,6 +20,12 @@ RUN /opt/conda/envs/py39/bin/pip install --no-cache-dir --upgrade -r /code/requi
 # 
 COPY ./app /code/app
 
+#
+COPY ./app/db_config.json /
+
+#
+COPY ./app/llm_config.json /
+
 # Make config files available to the app
 #ENV LLM_CONFIG="/llm_config.json"
 #ENV DB_CONFIG="/db_config.json"
