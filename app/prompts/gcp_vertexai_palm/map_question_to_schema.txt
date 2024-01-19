@@ -1,0 +1,6 @@
+Generate the complete question with the appropriate replacements. The goal is to restate the question using the list of vertex and edge types below.
+Vertex types: {vertices}.
+Edge types: {edges}.
+If there are words that are synonyms with the vertex types or edge types above, make sure to output the cannonical form found in the choices above.
+{format_instructions}
+QUESTION: {question}
