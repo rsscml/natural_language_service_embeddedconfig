@@ -1,5 +1,5 @@
 {
-    "hostname": "10.237.56.25",
+    "hostname": "https://10.237.56.25",
     "getToken": true,
     "default_timeout": 300,
     "default_mem_threshold": 5000,
